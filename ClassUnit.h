@@ -1,14 +1,31 @@
-#ifndef ABFACT_H
-#define ABFACT_H
+#ifndef CLASSUNIT_H
+#define CLASSUNIT_H
 
-#include <QWidget>
+#include "Unit.h"
+#include <iostream>
+#include <vector>
 
-class AbFact : public QWidget
+class ClassUnit : public Unit
 {
-    Q_OBJECT
+public:
+    // Перечисление модификаторов доступа для класса
+    enum AccessModifier
+    {
+        PUBLIC,
+        PROTECTED,
+        PRIVATE,
+        INTERNAL,
+        PROTECTED_INTERNAL,
+        PRIVATE_PROTECTED
+    };
 
 public:
-    AbFact(QWidget *parent = nullptr);
-    ~AbFact();
+    // Конструктор класса, принимающий имя класса
+    ClassUnit(const std::string& name): m_name(name){}
+
+protected:
+    std::string m_name; // Имя класса
+    using Fields = std::vector<std::shared_ptr<Unit>>; // Вектор элементов класса
+    std::vector< Fields > m_fields; // Вектор векторов элементов класса
 };
-#endif // ABFACT_H
+#endif // CLASSUNIT_H
