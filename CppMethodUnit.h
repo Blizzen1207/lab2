@@ -1,0 +1,4 @@
+#ifndef CPPMETHODUNIT_H
+#define CPPMETHODUNIT_H
+
+#endif // CPPMETHODUNIT_H

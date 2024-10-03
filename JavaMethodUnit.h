@@ -1,0 +1,4 @@
+#ifndef JAVAMETHODUNIT_H
+#define JAVAMETHODUNIT_H
+
+#endif // JAVAMETHODUNIT_H

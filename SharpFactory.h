@@ -1,0 +1,4 @@
+#ifndef SHARPFACTORY_H
+#define SHARPFACTORY_H
+
+#endif // SHARPFACTORY_H

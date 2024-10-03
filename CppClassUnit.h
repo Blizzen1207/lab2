@@ -1,0 +1,4 @@
+#ifndef CPPCLASSUNIT_H
+#define CPPCLASSUNIT_H
+
+#endif // CPPCLASSUNIT_H
